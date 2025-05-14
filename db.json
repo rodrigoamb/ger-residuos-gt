@@ -1,0 +1,92 @@
+{
+  "residuos": [
+    {
+      "id": "1",
+      "empresa": "RM Engenharia",
+      "cnpj": "00.000.000/0001-00",
+      "dataColeta": "2023-10-01",
+      "peso": 3.8,
+      "tipo": "Restos de Notebook"
+    },
+    {
+      "id": "2",
+      "empresa": "Tecno Recicla",
+      "cnpj": "12.345.678/0001-90",
+      "dataColeta": "2023-10-03",
+      "peso": 5.2,
+      "tipo": "Sucata de Impressora"
+    },
+    {
+      "id": "3",
+      "empresa": "Eco Tech",
+      "cnpj": "98.765.432/0001-12",
+      "dataColeta": "2023-10-05",
+      "peso": 2.4,
+      "tipo": "Placas-mãe inutilizadas"
+    },
+    {
+      "id": "4",
+      "empresa": "Green Byte",
+      "cnpj": "23.456.789/0001-45",
+      "dataColeta": "2023-10-06",
+      "peso": 4.1,
+      "tipo": "Cabos e conectores"
+    },
+    {
+      "id": "5",
+      "empresa": "Digital Recicla",
+      "cnpj": "34.567.890/0001-78",
+      "dataColeta": "2023-10-08",
+      "peso": 3,
+      "tipo": "Teclados e mouses"
+    },
+    {
+      "id": "6",
+      "empresa": "Bytes Verdes",
+      "cnpj": "45.678.901/0001-23",
+      "dataColeta": "2023-10-10",
+      "peso": 6.5,
+      "tipo": "Fontes de alimentação"
+    },
+    {
+      "id": "7",
+      "empresa": "E-Recicle",
+      "cnpj": "56.789.012/0001-34",
+      "dataColeta": "2023-10-12",
+      "peso": 1.9,
+      "tipo": "Monitores quebrados"
+    },
+    {
+      "id": "8",
+      "empresa": "Tech Lixo Zero",
+      "cnpj": "67.890.123/0001-56",
+      "dataColeta": "2023-10-13",
+      "peso": 2.7,
+      "tipo": "HDs e SSDs danificados"
+    },
+    {
+      "id": "9",
+      "empresa": "ReciclaBits",
+      "cnpj": "78.901.234/0001-67",
+      "dataColeta": "2023-10-15",
+      "peso": 4.3,
+      "tipo": "Circuitos eletrônicos"
+    },
+    {
+      "id": "10",
+      "empresa": "Soluções Sustentáveis",
+      "cnpj": "89.012.345/0001-89",
+      "dataColeta": "2023-10-17",
+      "peso": 3.6,
+      "tipo": "Sucata de servidores"
+    },
+    {
+      "id": "2499",
+      "empresa": "Rodrigo Programador",
+      "cnpj": "00.000.999/0001-00",
+      "dataColeta": "2025-05-13",
+      "peso": 5.2,
+      "tipo": "Restos de Placa-mãe"
+    }
+  ]
+}
