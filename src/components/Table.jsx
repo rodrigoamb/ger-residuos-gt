@@ -1,4 +1,8 @@
-export default function Table({ tableItems }) {
+export default function Table({ tableItems, setOpen }) {
+  function handleOpenDrawer() {
+    setOpen(true);
+  }
+
   return (
     <div className="max-w-screen-xl mx-auto px-4 md:px-8">
       <div className="items-start justify-between md:flex">
@@ -11,12 +15,12 @@ export default function Table({ tableItems }) {
           </p>
         </div>
         <div className="mt-3 md:mt-0">
-          <a
-            href="javascript:void(0)"
+          <button
+            onClick={handleOpenDrawer}
             className="inline-block px-4 py-2 text-white duration-150 font-medium bg-indigo-600 rounded-lg hover:bg-indigo-500 active:bg-indigo-700 md:text-sm"
           >
             Adicionar Resíduo
-          </a>
+          </button>
         </div>
       </div>
       <div className="mt-12 shadow-sm border rounded-lg overflow-x-auto">
