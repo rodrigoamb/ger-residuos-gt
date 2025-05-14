@@ -12,5 +12,5 @@ export async function fetchDataGet() {
 
   const data = await response.json();
 
-  console.log(data);
+  return data;
 }

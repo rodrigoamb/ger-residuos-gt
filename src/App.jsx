@@ -1,13 +1,18 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Table from "./components/Table";
 import { fetchDataGet } from "./services/fetchDataGet";
 
 export default function App() {
-  useEffect(() => {
-    fetchDataGet();
-  }, []);
+  const [tableItems, setTableItems] = useState([]);
 
-  const tableItems = [];
+  async function getAllResiduos() {
+    const response = await fetchDataGet();
+    setTableItems(response);
+  }
+
+  useEffect(() => {
+    getAllResiduos();
+  }, []);
 
   return (
     <div className="py-10">
