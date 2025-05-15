@@ -16,6 +16,7 @@ export default function FormAddResiduos() {
       <div>
         <label htmlFor="cnpj">Cnpj da empresa</label>
         <input
+          className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
           type="text"
           name="cnpj"
           id="cnpj"
@@ -26,12 +27,19 @@ export default function FormAddResiduos() {
 
       <div>
         <label htmlFor="dataColeta">Data da coleta</label>
-        <input type="date" name="dataColeta" id="dataColeta" required />
+        <input
+          className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
+          type="date"
+          name="dataColeta"
+          id="dataColeta"
+          required
+        />
       </div>
 
       <div>
         <label htmlFor="peso">Peso do resíduo</label>
         <input
+          className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
           type="number"
           name="peso"
           id="peso"
@@ -43,6 +51,7 @@ export default function FormAddResiduos() {
       <div>
         <label htmlFor="tipo">Tipo do resíduo</label>
         <input
+          className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
           type="text"
           name="tipo"
           id="tipo"
