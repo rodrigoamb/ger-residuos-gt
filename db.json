@@ -87,6 +87,14 @@
       "dataColeta": "2025-05-13",
       "peso": 5.2,
       "tipo": "Restos de Placa-mãe"
+    },
+    {
+      "id": "78ac",
+      "empresa": "Digital College",
+      "cnpj": "12435621435",
+      "dataColeta": "2025-05-16",
+      "peso": "25.4",
+      "tipo": "Restos de Notebooks"
     }
   ]
 }

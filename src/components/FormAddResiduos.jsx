@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { fetchAddResiduosPost } from "../services/fetchAddResiduosPost";
 
 export default function FormAddResiduos() {
   const [empresa, setEmpresa] = useState("");
@@ -7,8 +8,24 @@ export default function FormAddResiduos() {
   const [peso, setPeso] = useState("");
   const [tipo, setTipo] = useState("");
 
+  async function handleSubmitAddResiduo(event) {
+    event.preventDefault();
+
+    const dados = {
+      empresa,
+      cnpj,
+      dataColeta: data,
+      peso,
+      tipo,
+    };
+
+    const resposta = await fetchAddResiduosPost(dados);
+
+    console.log(resposta);
+  }
+
   return (
-    <form className="flex flex-col gap-4">
+    <form onSubmit={handleSubmitAddResiduo} className="flex flex-col gap-4">
       <div>
         <label htmlFor="empresa">Empresa</label>
         <input
