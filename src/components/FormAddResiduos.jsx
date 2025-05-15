@@ -20,6 +20,7 @@ export default function FormAddResiduos({ setOpen }) {
     };
 
     const resposta = await fetchAddResiduosPost(dados);
+
     if (resposta) {
       setEmpresa("");
       setCnpj("");
