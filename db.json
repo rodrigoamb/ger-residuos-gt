@@ -1,14 +1,6 @@
 {
   "residuos": [
     {
-      "id": "1",
-      "empresa": "RM Engenharia",
-      "cnpj": "00.000.000/0001-00",
-      "dataColeta": "2023-10-01",
-      "peso": 3.8,
-      "tipo": "Restos de Notebook"
-    },
-    {
       "id": "2",
       "empresa": "Tecno Recicla",
       "cnpj": "12.345.678/0001-90",
@@ -103,38 +95,6 @@
       "dataColeta": "2025-05-23",
       "peso": "54",
       "tipo": "tipo de teste"
-    },
-    {
-      "id": "9665",
-      "empresa": "Digital College teste add",
-      "cnpj": "4325242345",
-      "dataColeta": "2025-05-15",
-      "peso": "100",
-      "tipo": "Restos de Notebooks"
-    },
-    {
-      "id": "8367",
-      "empresa": "testeteste1",
-      "cnpj": "43252314",
-      "dataColeta": "2025-05-07",
-      "peso": "43",
-      "tipo": "tipodoresiduo"
-    },
-    {
-      "id": "89a0",
-      "empresa": "testeteste222",
-      "cnpj": "4325632452",
-      "dataColeta": "2025-05-15",
-      "peso": "432",
-      "tipo": "5436tfdgh"
-    },
-    {
-      "id": "96a8",
-      "empresa": "rodrigomedeiros",
-      "cnpj": "4325",
-      "dataColeta": "2025-05-08",
-      "peso": "55",
-      "tipo": "Restos de mesa"
     }
   ]
 }

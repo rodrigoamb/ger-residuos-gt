@@ -29,7 +29,11 @@ export default function App() {
       />
 
       <DrawerWrapper open={open} setOpen={setOpen} />
-      <ModalDelete open={openModalDelete} setOpen={setOpenModalDelete} />
+      <ModalDelete
+        open={openModalDelete}
+        setOpen={setOpenModalDelete}
+        itemToDelete={itemToDelete}
+      />
     </div>
   );
 }
