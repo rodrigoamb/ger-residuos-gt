@@ -1,9 +1,19 @@
+import { useState } from "react";
+
 export default function FormAddResiduos() {
+  const [empresa, setEmpresa] = useState("");
+  const [cnpj, setCnpj] = useState("");
+  const [data, setData] = useState("");
+  const [peso, setPeso] = useState("");
+  const [tipo, setTipo] = useState("");
+
   return (
     <form className="flex flex-col gap-4">
       <div>
         <label htmlFor="empresa">Empresa</label>
         <input
+          value={empresa}
+          onChange={(event) => setEmpresa(event.target.value)}
           className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
           type="text"
           name="empresa"
@@ -16,6 +26,8 @@ export default function FormAddResiduos() {
       <div>
         <label htmlFor="cnpj">Cnpj da empresa</label>
         <input
+          value={cnpj}
+          onChange={(event) => setCnpj(event.target.value)}
           className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
           type="text"
           name="cnpj"
@@ -28,6 +40,8 @@ export default function FormAddResiduos() {
       <div>
         <label htmlFor="dataColeta">Data da coleta</label>
         <input
+          value={data}
+          onChange={(event) => setData(event.target.value)}
           className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
           type="date"
           name="dataColeta"
@@ -39,6 +53,8 @@ export default function FormAddResiduos() {
       <div>
         <label htmlFor="peso">Peso do resíduo</label>
         <input
+          value={peso}
+          onChange={(event) => setPeso(event.target.value)}
           className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
           type="number"
           name="peso"
@@ -51,6 +67,8 @@ export default function FormAddResiduos() {
       <div>
         <label htmlFor="tipo">Tipo do resíduo</label>
         <input
+          value={tipo}
+          onChange={(event) => setTipo(event.target.value)}
           className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
           type="text"
           name="tipo"
