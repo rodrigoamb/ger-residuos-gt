@@ -1,6 +1,6 @@
 export default function FormAddResiduos() {
   return (
-    <form>
+    <form className="flex flex-col gap-4">
       <div>
         <label htmlFor="empresa">Empresa</label>
         <input
@@ -60,8 +60,13 @@ export default function FormAddResiduos() {
         />
       </div>
 
-      <div>
-        <button type="submit">Adicionar</button>
+      <div className="flex flex-row-reverse w-full">
+        <button
+          className="inline-block px-4 py-2 text-white duration-150 font-medium bg-indigo-600 rounded-lg hover:bg-indigo-500 active:bg-indigo-700 md:text-sm"
+          type="submit"
+        >
+          Adicionar
+        </button>
       </div>
     </form>
   );
