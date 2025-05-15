@@ -2,10 +2,13 @@ import { useEffect, useState } from "react";
 import Table from "./components/Table";
 import { fetchDataGet } from "./services/fetchDataGet";
 import DrawerWrapper from "./components/DrawerWrapper";
+import ModalDelete from "./components/ModalDelete";
 
 export default function App() {
   const [tableItems, setTableItems] = useState([]);
   const [open, setOpen] = useState(false);
+  const [openModalDelete, setOpenModalDelete] = useState(false);
+  const [itemToDelete, setItemToDelete] = useState(null);
 
   async function getAllResiduos() {
     const response = await fetchDataGet();
@@ -18,9 +21,14 @@ export default function App() {
 
   return (
     <div className="py-10">
-      <Table tableItems={tableItems} setOpen={setOpen} />
+      <Table
+        tableItems={tableItems}
+        setOpen={setOpen}
+        setOpenModalDelete={setOpenModalDelete}
+      />
 
       <DrawerWrapper open={open} setOpen={setOpen} />
+      <ModalDelete open={openModalDelete} setOpen={setOpenModalDelete} />
     </div>
   );
 }

@@ -1,6 +1,12 @@
-export default function Table({ tableItems, setOpen }) {
+export default function Table({ tableItems, setOpen, setOpenModalDelete }) {
   function handleOpenDrawer() {
     setOpen(true);
+  }
+
+  function handleOpenModalDelete(item) {
+    console.log("abrindo modal delete");
+    console.log(item);
+    setOpenModalDelete(true);
   }
 
   return (
@@ -53,7 +59,7 @@ export default function Table({ tableItems, setOpen }) {
                     Editar
                   </a>
                   <button
-                    href="javascript:void()"
+                    onClick={() => handleOpenModalDelete(item)}
                     className="py-2 leading-none px-3 font-medium text-red-600 hover:text-red-500 duration-150 hover:bg-gray-50 rounded-lg"
                   >
                     Deletar
