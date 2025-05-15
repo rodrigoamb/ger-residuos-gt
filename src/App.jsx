@@ -25,6 +25,7 @@ export default function App() {
         tableItems={tableItems}
         setOpen={setOpen}
         setOpenModalDelete={setOpenModalDelete}
+        setItemToDelete={setItemToDelete}
       />
 
       <DrawerWrapper open={open} setOpen={setOpen} />

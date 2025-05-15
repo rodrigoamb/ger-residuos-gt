@@ -1,11 +1,15 @@
-export default function Table({ tableItems, setOpen, setOpenModalDelete }) {
+export default function Table({
+  tableItems,
+  setOpen,
+  setOpenModalDelete,
+  setItemToDelete,
+}) {
   function handleOpenDrawer() {
     setOpen(true);
   }
 
   function handleOpenModalDelete(item) {
-    console.log("abrindo modal delete");
-    console.log(item);
+    setItemToDelete(item);
     setOpenModalDelete(true);
   }
 
