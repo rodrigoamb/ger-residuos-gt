@@ -95,6 +95,30 @@
       "dataColeta": "2025-05-16",
       "peso": "25.4",
       "tipo": "Restos de Notebooks"
+    },
+    {
+      "id": "222c",
+      "empresa": "teste",
+      "cnpj": "32456",
+      "dataColeta": "2025-05-22",
+      "peso": "43",
+      "tipo": "Restos de impressora"
+    },
+    {
+      "id": "9db6",
+      "empresa": "rweqtyrhfgd",
+      "cnpj": "42536",
+      "dataColeta": "2025-05-29",
+      "peso": "435",
+      "tipo": "Restos de Notebooks"
+    },
+    {
+      "id": "640c",
+      "empresa": " Digital College teste",
+      "cnpj": "423156",
+      "dataColeta": "2025-05-23",
+      "peso": "423.43",
+      "tipo": "Restos de Notebooks"
     }
   ]
 }

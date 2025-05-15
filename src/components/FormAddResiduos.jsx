@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { fetchAddResiduosPost } from "../services/fetchAddResiduosPost";
 
-export default function FormAddResiduos() {
+export default function FormAddResiduos({ setOpen }) {
   const [empresa, setEmpresa] = useState("");
   const [cnpj, setCnpj] = useState("");
   const [data, setData] = useState("");
@@ -20,8 +20,14 @@ export default function FormAddResiduos() {
     };
 
     const resposta = await fetchAddResiduosPost(dados);
-
-    console.log(resposta);
+    if (resposta) {
+      setEmpresa("");
+      setCnpj("");
+      setData("");
+      setPeso("");
+      setTipo("");
+      setOpen(false);
+    }
   }
 
   return (

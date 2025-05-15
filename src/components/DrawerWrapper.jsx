@@ -43,7 +43,7 @@ export default function DrawerWrapper({ open, setOpen }) {
                   </DialogTitle>
                 </div>
                 <div className="relative mt-6 flex-1 px-4 sm:px-6">
-                  <FormAddResiduos />
+                  <FormAddResiduos setOpen={setOpen} />
                 </div>
               </div>
             </DialogPanel>
