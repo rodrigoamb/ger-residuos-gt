@@ -27,6 +27,8 @@ export default function FormEditResiduo({ residuo }) {
       <div>
         <label htmlFor="cnpj">Cnpj da empresa</label>
         <input
+          value={editCnpj}
+          onChange={(event) => setEditCnpj(event.target.value)}
           className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
           type="text"
           name="cnpj"
@@ -39,6 +41,8 @@ export default function FormEditResiduo({ residuo }) {
       <div>
         <label htmlFor="dataColeta">Data da coleta</label>
         <input
+          value={editData}
+          onChange={(event) => setEditData(event.target.value)}
           className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
           type="date"
           name="dataColeta"
@@ -50,6 +54,8 @@ export default function FormEditResiduo({ residuo }) {
       <div>
         <label htmlFor="peso">Peso do resíduo</label>
         <input
+          value={editPeso}
+          onChange={(event) => setEditPeso(event.target.value)}
           className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
           type="number"
           name="peso"
@@ -62,6 +68,8 @@ export default function FormEditResiduo({ residuo }) {
       <div>
         <label htmlFor="tipo">Tipo do resíduo</label>
         <input
+          value={editTipo}
+          onChange={(event) => setEditTipo(event.target.value)}
           className="block border-1 rounded-md w-full min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
           type="text"
           name="tipo"
