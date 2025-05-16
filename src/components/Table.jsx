@@ -1,9 +1,13 @@
+import { useNavigate } from "react-router";
+
 export default function Table({
   tableItems,
   setOpen,
   setOpenModalDelete,
   setItemToDelete,
 }) {
+  const navigate = useNavigate();
+
   function handleOpenDrawer() {
     setOpen(true);
   }
@@ -11,6 +15,10 @@ export default function Table({
   function handleOpenModalDelete(item) {
     setItemToDelete(item);
     setOpenModalDelete(true);
+  }
+
+  function handleNavigateToEdit(id) {
+    navigate(`/editar-residuo/${id}`);
   }
 
   return (
@@ -56,12 +64,12 @@ export default function Table({
                 <td className="px-6 py-4 whitespace-nowrap">{item.peso}kg</td>
                 <td className="px-6 py-4 whitespace-nowrap">{item.tipo}</td>
                 <td className="text-right px-6 whitespace-nowrap">
-                  <a
-                    href="javascript:void()"
+                  <button
+                    onClick={() => handleNavigateToEdit(item.id)}
                     className="py-2 px-3 font-medium text-indigo-600 hover:text-indigo-500 duration-150 hover:bg-gray-50 rounded-lg"
                   >
                     Editar
-                  </a>
+                  </button>
                   <button
                     onClick={() => handleOpenModalDelete(item)}
                     className="py-2 leading-none px-3 font-medium text-red-600 hover:text-red-500 duration-150 hover:bg-gray-50 rounded-lg"
