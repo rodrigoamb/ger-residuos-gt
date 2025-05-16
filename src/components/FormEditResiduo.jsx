@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { fetchEditResiduo } from "../services/fetchEditResiduo";
+import { useNavigate } from "react-router";
 
 export default function FormEditResiduo({ residuo }) {
   const [editEmpresa, setEditEmpresa] = useState(residuo.empresa);
@@ -7,8 +9,31 @@ export default function FormEditResiduo({ residuo }) {
   const [editPeso, setEditPeso] = useState(residuo.peso);
   const [editTipo, setEditTipo] = useState(residuo.tipo);
 
+  const navigate = useNavigate();
+
+  async function handleSubmitEditResiduo(event) {
+    event.preventDefault();
+
+    const updatedResiduo = {
+      empresa: editEmpresa,
+      cnpj: editCnpj,
+      dataColeta: editData,
+      peso: editPeso,
+      tipo: editTipo,
+    };
+
+    const response = await fetchEditResiduo(residuo.id, updatedResiduo);
+
+    if (response) {
+      navigate("/");
+    }
+  }
+
   return (
-    <form className="flex flex-col gap-4 w-[50%] p-10">
+    <form
+      onSubmit={handleSubmitEditResiduo}
+      className="flex flex-col gap-4 w-[50%] p-10"
+    >
       <h1 className="font-bold text-2xl">Editar Resíduo</h1>
       <div>
         <label htmlFor="empresa">Empresa</label>

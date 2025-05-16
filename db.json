@@ -25,12 +25,12 @@
       "tipo": "Cabos e conectores"
     },
     {
-      "id": "5",
-      "empresa": "Digital Recicla",
+      "empresa": "Digital Recicla tech",
       "cnpj": "34.567.890/0001-78",
       "dataColeta": "2023-10-08",
       "peso": 3,
-      "tipo": "Teclados e mouses"
+      "tipo": "Teclados e mouses",
+      "id": "5"
     },
     {
       "id": "6",
