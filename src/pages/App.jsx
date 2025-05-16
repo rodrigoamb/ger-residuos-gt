@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Table from "./components/Table";
-import { fetchDataGet } from "./services/fetchDataGet";
-import DrawerWrapper from "./components/DrawerWrapper";
-import ModalDelete from "./components/ModalDelete";
+import Table from "../components/Table";
+import { fetchDataGet } from "../services/fetchDataGet";
+import DrawerWrapper from "../components/DrawerWrapper";
+import ModalDelete from "../components/ModalDelete";
 
 export default function App() {
   const [tableItems, setTableItems] = useState([]);
