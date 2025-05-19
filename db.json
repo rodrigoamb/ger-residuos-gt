@@ -1,46 +1,6 @@
 {
   "residuos": [
     {
-      "id": "2",
-      "empresa": "Tecno Recicla",
-      "cnpj": "12.345.678/0001-90",
-      "dataColeta": "2023-10-03",
-      "peso": 5.2,
-      "tipo": "Sucata de Impressora"
-    },
-    {
-      "id": "3",
-      "empresa": "Eco Tech",
-      "cnpj": "98.765.432/0001-12",
-      "dataColeta": "2023-10-05",
-      "peso": 2.4,
-      "tipo": "Placas-mãe inutilizadas"
-    },
-    {
-      "id": "4",
-      "empresa": "Green Byte",
-      "cnpj": "23.456.789/0001-45",
-      "dataColeta": "2023-10-06",
-      "peso": 4.1,
-      "tipo": "Cabos e conectores"
-    },
-    {
-      "empresa": "Digital Recicla tech",
-      "cnpj": "34.567.890/0001-78",
-      "dataColeta": "2023-10-08",
-      "peso": 3,
-      "tipo": "Teclados e mouses",
-      "id": "5"
-    },
-    {
-      "id": "6",
-      "empresa": "Bytes Verdes",
-      "cnpj": "45.678.901/0001-23",
-      "dataColeta": "2023-10-10",
-      "peso": 6.5,
-      "tipo": "Fontes de alimentação"
-    },
-    {
       "id": "7",
       "empresa": "E-Recicle",
       "cnpj": "56.789.012/0001-34",
@@ -65,14 +25,6 @@
       "tipo": "Circuitos eletrônicos"
     },
     {
-      "id": "10",
-      "empresa": "Soluções Sustentáveis",
-      "cnpj": "89.012.345/0001-89",
-      "dataColeta": "2023-10-17",
-      "peso": 3.6,
-      "tipo": "Sucata de servidores"
-    },
-    {
       "id": "4318",
       "empresa": "Digital College",
       "cnpj": "4235624356",
@@ -89,12 +41,20 @@
       "tipo": "Restos de Notebooks523452345234"
     },
     {
-      "id": "e76e",
-      "empresa": "teste Rodrigo",
-      "cnpj": "432565342",
+      "empresa": "Empresa RM",
+      "cnpj": "432565342342",
+      "dataColeta": "2025-05-31",
+      "peso": "20.5",
+      "tipo": "Restos de placa-mãe",
+      "id": "e76e"
+    },
+    {
+      "id": "5278",
+      "empresa": "Digital College",
+      "cnpj": "20.387.807/0001-36",
       "dataColeta": "2025-05-23",
-      "peso": "54",
-      "tipo": "tipo de teste"
+      "peso": "25.5",
+      "tipo": "Restos de Notebooks"
     }
   ]
 }
