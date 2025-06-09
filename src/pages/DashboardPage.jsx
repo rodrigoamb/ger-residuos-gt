@@ -4,7 +4,7 @@ import { fetchDataGet } from "../services/fetchDataGet";
 import DrawerWrapper from "../components/DrawerWrapper";
 import ModalDelete from "../components/ModalDelete";
 
-export default function App() {
+export default function DashboardPage() {
   const [tableItems, setTableItems] = useState([]);
   const [open, setOpen] = useState(false);
   const [openModalDelete, setOpenModalDelete] = useState(false);
@@ -28,7 +28,11 @@ export default function App() {
         setItemToDelete={setItemToDelete}
       />
 
-      <DrawerWrapper open={open} setOpen={setOpen} />
+      <DrawerWrapper
+        open={open}
+        setOpen={setOpen}
+        getAllResiduos={getAllResiduos}
+      />
       <ModalDelete
         open={openModalDelete}
         setOpen={setOpenModalDelete}

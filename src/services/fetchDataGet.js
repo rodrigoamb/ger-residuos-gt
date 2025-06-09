@@ -1,5 +1,5 @@
 export async function fetchDataGet() {
-  const response = await fetch("http://localhost:3001/residuos", {
+  const response = await fetch("http://localhost:3000/residuos", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

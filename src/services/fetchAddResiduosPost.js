@@ -1,5 +1,5 @@
 export async function fetchAddResiduosPost(dados) {
-  const response = await fetch("http://localhost:3001/residuos", {
+  const response = await fetch("http://localhost:3000/residuos", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

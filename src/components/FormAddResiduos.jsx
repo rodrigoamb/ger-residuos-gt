@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { fetchAddResiduosPost } from "../services/fetchAddResiduosPost";
 
-export default function FormAddResiduos({ setOpen }) {
+export default function FormAddResiduos({ setOpen, getAllResiduos }) {
   const [empresa, setEmpresa] = useState("");
   const [cnpj, setCnpj] = useState("");
   const [data, setData] = useState("");
@@ -27,6 +27,7 @@ export default function FormAddResiduos({ setOpen }) {
       setData("");
       setPeso("");
       setTipo("");
+      getAllResiduos();
       setOpen(false);
     }
   }

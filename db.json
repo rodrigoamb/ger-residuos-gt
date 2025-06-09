@@ -55,6 +55,30 @@
       "dataColeta": "2025-05-23",
       "peso": "25.5",
       "tipo": "Restos de Notebooks"
+    },
+    {
+      "id": "ede4",
+      "empresa": "teste1",
+      "cnpj": "2134134124321",
+      "dataColeta": "2025-06-10",
+      "peso": "42",
+      "tipo": "Restos de Notebooks"
+    },
+    {
+      "id": "238c",
+      "empresa": "RM peças",
+      "cnpj": "42133421",
+      "dataColeta": "2025-06-10",
+      "peso": "123",
+      "tipo": "Restos de impressora"
+    },
+    {
+      "empresa": "rome peças 2",
+      "cnpj": "41231234",
+      "dataColeta": "2025-06-26",
+      "peso": "123321",
+      "tipo": " rwety teeeste",
+      "id": "a37a"
     }
   ]
 }
