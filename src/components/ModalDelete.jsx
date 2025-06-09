@@ -9,11 +9,17 @@ import {
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import { fetchDeleteResiduo } from "../services/fetchDeleteResiduo";
 
-export default function ModalDelete({ open, setOpen, itemToDelete }) {
+export default function ModalDelete({
+  open,
+  setOpen,
+  itemToDelete,
+  getAllResiduos,
+}) {
   async function handleDeleteResiduo() {
     const result = await fetchDeleteResiduo(itemToDelete.id);
 
     if (result) {
+      getAllResiduos();
       setOpen(false);
     }
   }

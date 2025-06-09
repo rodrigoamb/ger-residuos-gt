@@ -8,7 +8,7 @@ import {
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import FormAddResiduos from "./FormAddResiduos";
 
-export default function DrawerWrapper({ open, setOpen }) {
+export default function DrawerWrapper({ open, setOpen, getAllResiduos }) {
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">
       <DialogBackdrop
@@ -43,7 +43,10 @@ export default function DrawerWrapper({ open, setOpen }) {
                   </DialogTitle>
                 </div>
                 <div className="relative mt-6 flex-1 px-4 sm:px-6">
-                  <FormAddResiduos setOpen={setOpen} />
+                  <FormAddResiduos
+                    setOpen={setOpen}
+                    getAllResiduos={getAllResiduos}
+                  />
                 </div>
               </div>
             </DialogPanel>
