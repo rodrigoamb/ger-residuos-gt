@@ -26,7 +26,7 @@ export default function Table({
       <div className="items-start justify-between md:flex">
         <div className="max-w-lg">
           <h3 className="text-gray-800 text-xl font-bold sm:text-2xl">
-            Gerenciador de Resíduos
+            Gerenciador de Resíduos feito no GT
           </h3>
           <p className="text-gray-600 mt-2">
             Acompanhe, adicione, edite e remova os resíduos.
